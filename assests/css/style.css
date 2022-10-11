@@ -1,0 +1,646 @@
+/* ---------------
+ GLobal Style
+---------------- */
+@font-face {
+  font-family: IslandMoments-Regular;
+  src: url("../fonts/Island_Moments/IslandMoments-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: poppins;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+* {
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #4b71d0;
+  border-radius: 3rem;
+}
+
+body {
+  background: var(--bg);
+  font-family: Raleway !important;
+}
+
+section{
+  padding-top: 5rem;
+} 
+
+/* ---------
+Typography
+--------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  line-height: inherit;
+}
+
+h1,h2,h3,h4 {
+  letter-spacing: 0.01em;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  color: #252525;
+  font-size: 3.5em !important;
+  font-weight: 600!important;
+  font-family: poppins;
+  letter-spacing: 0.005em;
+  font-style: normal;
+}
+
+
+h2 {
+  color: #272727;
+  font-family: Raleway;
+  font-weight: 600 !important;
+  font-size: 2.8rem !important;
+  letter-spacing: 0.01em !important;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: #4b71d0;
+  font-size: 1.3em !important;
+  padding-bottom: 2px;
+font-weight: 600 !important;
+letter-spacing: 0.01em;
+}
+h5{
+  font-size: 1.8em !important;
+    font-weight: 400;
+}
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  font-size: 0.9em !important;
+  font-weight: 600!important;
+}
+
+p {
+  color: #757575;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.8;
+  letter-spacing: 0.005em;
+}
+
+
+
+.btn-style {
+  width: 250px;
+  height: 80px;
+  border-radius: 74px;
+  background: #f3f5f9;
+  box-shadow: 10px 30px 40px rgb(0 0 0 / 25%);
+  border-radius: 74px !important;
+  font-weight: 600 !important;
+}
+.navbar {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+
+
+
+
+/*----------------------
+         Navbar 
+    -----------------------*/
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  width: 435px;
+  height: 697px;
+  left: -178px;
+  top: -114px;
+  background: rgba(75, 113, 208, 0.26);
+  filter: blur(250px);
+}
+.active {
+  color: #4b71d0 !important;
+}
+.navbar-brand {
+  font-family: IslandMoments-Regular;
+  font-size: 60px !important;
+  font-weight: 400;
+  text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.25);
+}
+.nav-link {
+  font-family: poppins;
+}
+.navbar button {
+  background: #4b71d0;
+  border-radius: 5px;
+  font-size: 13px !important;
+  height: 43px;
+}
+
+/*--------------------
+     Slider Section
+ ------------------- */
+
+ .main_slider{
+  padding: 0rem !important;
+  height: 100%;
+  min-height: 670px;
+ }
+
+.main_slider .right {
+  min-height: 600px;
+  height: 100%;
+  align-items: center;
+}
+ .main_slider h1 {
+  left: 210px;
+  z-index: 1;
+ 
+} 
+.main_slider span {
+  color: #4b71d0;
+}
+
+.main_slider img {
+  width: 100%;
+  height: 600px;
+  z-index: 0;
+  object-fit: fill;
+}
+.main_slider .left p {
+  width: 29rem;
+  right: 7.5rem;
+  font-weight: 500 !important;
+}
+.main_slider button {
+  bottom: 6rem;
+}
+.arrow {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #4b71d0;
+}
+.main_slider .card {
+  background-color: rgba(75, 113, 208, 0.81) !important;
+  width: 345px;
+  height: 235px;
+  top: 28rem;
+}
+.card-title {
+  margin-bottom: 0.2rem !important;
+}
+.main_slider .card-text {
+  font-size: 0.9em;
+  color: #f0f0f0 !important;
+  font-weight: 500 !important;
+  margin-top: 2px !important;
+  margin-bottom: 0.2rem !important;
+}
+.card i {
+  bottom: 25px !important;
+  right: 30px !important;
+}
+/* ------------
+About us----------
+ */
+
+ .about-us{
+  padding-bottom: 8rem;
+  position: relative;
+ }
+ .about-us button{
+  text-align: start;
+    padding-left: 23px;
+ }
+ .about-us .arrow{
+  top: 10px;
+  right: 17px;
+ }
+ .about-us .arrow_svg{
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+ }
+.about-us .right{
+  border-left: 1px solid rgba(172, 170, 170, 0.671);
+  padding-left: 50px;
+}
+.about-icon{
+  height: 60px;
+    width: 60px;
+  background: #4B71D0;
+box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  text-align: center;
+}
+.fa-hand-holding-dollar{
+  line-height: 50px !important;
+  font-size: 20px;
+}
+.right p{
+  width: 80%;
+}
+.left p{
+  text-align: justify;
+  letter-spacing: 0.07em;
+  width: 75%;
+}
+.horizontal-line::before{
+  content: "";
+  width: 150px;
+  border: 1px solid #4b71d0;
+  position: absolute;
+  top: 90px;
+  left: 10%;
+}
+/*----------------------
+    OurServices
+ ---------------------- */
+.our-services {
+  position: relative;
+  background-color: #f1f1f1ab;
+  height: 100%;
+  min-height: 570px;
+  border-top-right-radius: 40px;
+}
+.ourservice-heading::before{
+    content: " ";
+    width: 150px;
+    border: 1px solid #4b71d0;
+    position: absolute;
+    top: 90px;
+    left: 10%;
+   
+}
+.our-services .arrow_svg{
+  width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.our-services .arrow{
+  right: 10px;
+}
+.our-services .right {
+  box-shadow: 5px 5px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 17px 40px 17px 17px;
+  background-color: #4b71d0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-height: 500px;
+  position: absolute;
+  
+}
+.our-services .left p{
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+.our-services button{
+    width: 200px;
+    height: 60px;
+    font-weight: 400;
+    bottom: 5rem;
+}
+.our-services .arrow{
+    height: 50px;
+    width: 50px;
+}
+.counting p{
+    background: rgba(75, 113, 208, 0.26);
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    color: #4b71d0;
+    font-weight: 600;
+}
+/* .teeth-img .slick-slide img{
+  display: inline !important;
+} */
+.teeth-img img{
+    height: 50px;
+    width: 50px;
+    display: inline !important;
+}
+.service_slider .slick-list{
+  overflow: hidden !important;
+}
+.our-services .teeth-img{
+    background: #d8d5d5 !important;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    border-radius: 50%;
+}
+.our-services .right h3{
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+.our-services .right p{
+    word-spacing: 0.1em;
+    color: #ffffff;
+    text-align: justify;
+}
+.sliderNav.active{
+  opacity:0.5;
+}
+/* End of Our Services Section Style */
+
+
+/* Testimonails Section Style */
+.testimonails{
+    background-image: url("../images/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.testimonails h4::before{
+  content: " ";
+  width: 150px;
+  border: 1px solid #4b71d0;
+  position: absolute;
+  top: 90px;
+  left: 573px;
+}
+.testimonails-card{
+    position: relative;
+    height: 100%;
+    min-height: 494px;
+}
+.header-img{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 11px;
+    left: 17%;
+    z-index: 1;
+}
+.testimonails-card .card{
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    box-shadow: -5px 7px 14px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+}
+.testimonails .card-title::before{
+    position: absolute;
+    content: "";
+    width: 12px;
+    border: 1px solid #B2C2EB;
+    top: 28%;
+    left: 38%;
+}
+.testimonails .card-title::after{
+    position: absolute;
+    content: "";
+    width: 12px;
+    border: 1px solid #B2C2EB;
+    top: 28%;
+    right: 38%;
+}
+
+.icons{
+    text-align: center;
+}
+.icons img{
+    height: 22px;
+    width: 22px;
+}
+.checked {
+    color: #C6CA08;
+}
+    
+/* end of testimonials style */
+
+
+/*     Our Team Style        */
+.our-team{
+ background-color: #e5e5e599;
+ height: 100%;
+ min-height: 650px;
+
+}
+.our-team .slick-prev{
+  top: 400px;
+  left: 75%;
+  rotate: 0deg !important;
+}
+.our-team .slick-next{
+  left: 78%;
+  top: 400px;
+  rotate: 0deg !important;
+}
+.our-team h4{
+  color: #4b71d0;
+}
+.our-team h4::before{
+  position: absolute;
+  content: "";
+  width: 150px;
+  border: 1px solid #4b71d0;
+  top: 90px;
+  left: 585px;
+}
+.our-team .card-1{
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  bottom: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.our-team .card-2{
+box-shadow: -30px 20px 40px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+width: 275px;
+height: 290px;
+}
+.round-circle{
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  border: 20px solid #4b71d0a1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 25px;
+}
+.content{
+  height: 100%;
+  min-height: 442px;
+  position: relative;
+}
+.our-team p{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  line-height: 32px;
+}
+
+
+
+.our-team img {
+  height: 355px;
+  width: 355px;
+  object-fit: fill;
+  padding-top: 45px;
+}
+
+
+
+/* Form Style */
+.form .left{
+  background-color: #4b71d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.my-style{
+  padding: 0 !important;
+}
+.form h2{
+  letter-spacing: 0.14em !important;
+}
+.form p{
+  text-align: justify;
+  width: 500px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.form .right{
+background-color: #ffffff;
+}
+.form-control{
+  width: 206px !important;
+  height: 50px;
+  border: 1px solid #4b71d0 !important;
+  border-top-left-radius: 1px !important;
+  border-bottom-left-radius: 1px !important;
+  background: #F3F5F9 !important;
+  color: rgba(168, 166, 166, 0.8) !important;
+  opacity: 0.5 !important;
+}
+.control-label{
+  color: #4b71d0;
+  font-weight: 400;
+}
+.input-group-addon{
+  background-color: #4b71d0;
+  border-top-left-radius: 10px;
+  padding: 13px;
+}
+.form-element{
+  display: flex;
+}
+.address{
+  width: 565px !important ;
+  height: 55px;
+}
+.arrow-style{
+  padding: 15px;
+}
+.button-style{
+  background-color: #4b71d0 !important;
+  padding: 10px 30px !important;
+  border-radius: 5px !important;
+  color: #ffffff !important;
+  text-align: center !important;
+}
+/* end of Form Section Style */
+
+
+.footer{
+  background-color: #F1F1F1;
+  padding: 3rem 0;
+}
+.footer p{
+  color: rgba(0, 0, 0, 0.53);
+}
+.footer .fa-solid{
+  color: #4b71d0 !important;
+}
+.footer h4{
+  color:#4b71d0;
+}
+
+.footer ul li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.64);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.footer-bottom{
+  background-color: #4b71d0;
+}
+.footer-bottom p{
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Add arrow head and line separetly but together, And Increase the size of line  Got it? */
+
+
+/* end of footer Style */
+
+
+/* Back to Top Button */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 30px;
+  border-color: white;
+  background-color: #4B71D0;
+}
