@@ -541,9 +541,7 @@ height: 290px;
   justify-content: center;
   gap: 15px;
 }
-.my-style{
-  padding: 0 !important;
-}
+
 .form h2{
   letter-spacing: 0.14em !important;
 }
@@ -645,5 +643,51 @@ background-color: #ffffff;
   background-color: #4B71D0;
 }
 
+/* Media Queries */
 
 
+ /* Small devices (landscape phones, 576px and up)  */
+
+
+
+ @media (max-width: 576px) { 
+  .navbar{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .navbar-brand{
+    font-size: 36px !important;
+  }
+  .navbar::before{
+    width: 190px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media (max-width: 768px) { 
+  .navbar-brand{
+    font-size: 36px !important;
+  }
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+  
+ }
+
+ /* X-Large devices (large desktops, 1200px and up)  */
+@media (max-width: 1200px) { 
+  .form .left{
+    gap: 5px ;
+  }
+  .form p{
+    width: 410px;
+  }
+ }
+
+  /* XX-Large devices (larger desktops, 1400px and up)  */
+@media (max-width: 1400px) {  
+ 
+}
