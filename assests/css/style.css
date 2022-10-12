@@ -700,6 +700,9 @@ background-color: #ffffff;
   .about-us h2{
     font-size: 2.6rem !important;
   }
+  .horizontal-line::before{
+    left: 9%;
+  }
 }
 
 
