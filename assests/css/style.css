@@ -645,5 +645,40 @@ background-color: #ffffff;
   background-color: #4B71D0;
 }
 
+/* Media query  */
 
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (max-width: 576px) { 
+  .navbar-brand{
+    font-size: 36px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .navbar-brand{
+    font-size: 36px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+ }
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ 
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+ 
+}
 
