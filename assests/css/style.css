@@ -672,7 +672,10 @@ background-color: #ffffff;
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .about-us h2{
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
+  }
+  .left p{
+    width: 87%;
   }
 }
 
@@ -681,6 +684,13 @@ background-color: #ffffff;
   .navbar-brand{
   font-size: 36px !important;
 }
+.horizontal-line::before{
+  left: 8%;
+}
+.about-us h4{
+  margin-left: 162px;
+}
+
 
 }
 
