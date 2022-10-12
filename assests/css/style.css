@@ -145,7 +145,7 @@ p {
          Navbar 
     -----------------------*/
 
-.navbar::before {
+/* .navbar::before {
   content: "";
   position: absolute;
   width: 435px;
@@ -154,7 +154,7 @@ p {
   top: -114px;
   background: rgba(75, 113, 208, 0.26);
   filter: blur(250px);
-}
+} */
 .active {
   color: #4b71d0 !important;
 }
@@ -674,11 +674,18 @@ background-color: #ffffff;
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
-  
+  .about-us h2{
+    font-size: 2.2rem !important;
+  }
  }
 
  /* X-Large devices (large desktops, 1200px and up)  */
 @media (max-width: 1200px) { 
+
+  .about-us h2{
+    font-size: 2.6rem !important;
+  }
+
   .form .left{
     gap: 5px ;
   }
@@ -689,5 +696,18 @@ background-color: #ffffff;
 
   /* XX-Large devices (larger desktops, 1400px and up)  */
 @media (max-width: 1400px) {  
- 
+   .about-us h2{
+    font-size: 2.8rem !important;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
