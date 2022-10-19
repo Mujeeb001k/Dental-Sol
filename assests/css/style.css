@@ -82,7 +82,7 @@ h2 {
   color: #272727;
   font-family: Raleway;
   font-weight: 600 !important;
-  font-size: 2.8rem !important;
+  font-size: 2.8rem;
   letter-spacing: 0.01em !important;
   padding-bottom: 10px;
   padding-top: 15px;
@@ -244,19 +244,19 @@ About us----------
 
  .about-us{
   padding-bottom: 8rem;
-  position: relative;
+
  }
- 
  .aboutus-heading{
-  margin-left: 159px;
+  position: relative;
+  text-indent: 7em;
  }
+
+
  .about-us button{
   text-align: start;
     padding-left: 23px;
  }
- .about-us h2{
-  width:28rem;
- }
+
  .about-us .arrow{
   top: 10px;
   right: 17px;
@@ -283,21 +283,21 @@ box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
   line-height: 50px !important;
   font-size: 20px;
 }
-.right p{
+.about-us .right p{
   width: 80%;
 }
-.left p{
+.about-us .left p{
   text-align: justify;
   letter-spacing: 0.07em;
   width: 75%;
 }
 .aboutus-heading::before{
   content: "";
-  width: 150px;
   border: 1px solid #4b71d0;
   position: absolute;
-  top: 90px;
-  left: 121px;
+  top: 12px;
+  left: 1px;
+  width: 144px;
 }
 /*----------------------
     OurServices
@@ -315,7 +315,7 @@ box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
     border: 1px solid #4b71d0;
     position: absolute;
     top: 90px;
-    left: 10%;
+
 
 }
 .our-services .arrow_svg{
@@ -401,54 +401,50 @@ box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
     background-position: center;
     background-size: cover;
 }
+.testimonails h4{
+  position: relative;
+}
 .testimonails h4::before{
   content: " ";
-  width: 150px;
+  width: 140px;
   border: 1px solid #4b71d0;
   position: absolute;
-  top: 90px;
-  left: 573px;
+  top: 0.8rem;
+  left: 21rem;
 }
 .testimonails-card{
     position: relative;
     height: 100%;
     min-height: 494px;
+    margin:auto;
 }
 .header-img{
     height: 160px;
     width: 160px;
     position: absolute;
-    top: 11px;
-    left: 17%;
+   
+  
     z-index: 1;
 }
 .testimonails-card .card{
-    margin: auto;
     position: absolute;
-    top: 20%;
-    right: 20%;
-    margin: auto;
-    position: absolute;
-    top: 20%;
-    right: 20%;
     box-shadow: -5px 7px 14px rgb(0 0 0 / 20%);
     border-radius: 4px;
+
 }
 .testimonails .card-title::before{
     position: absolute;
     content: "";
-    width: 12px;
+    width: 18px;
     border: 1px solid #B2C2EB;
-    top: 28%;
-    left: 38%;
+
 }
 .testimonails .card-title::after{
     position: absolute;
     content: "";
-    width: 12px;
+    width: 18px;
     border: 1px solid #B2C2EB;
-    top: 28%;
-    right: 38%;
+
 }
 
 .icons{
@@ -484,14 +480,15 @@ box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
 }
 .our-team h4{
   color: #4b71d0;
+  position: relative;
 }
 .our-team h4::before{
   position: absolute;
   content: "";
   width: 150px;
   border: 1px solid #4b71d0;
-  top: 90px;
-  left: 585px;
+  top: 0.8rem;
+  left: 22rem;
 }
 .our-team .card-1{
   width: 150px;
@@ -554,7 +551,7 @@ height: 290px;
 }
 .form p{
   text-align: justify;
-  width: 500px;
+
   font-size: 18px;
   color: #ffffff;
 }
@@ -563,16 +560,17 @@ height: 290px;
 background-color: #ffffff;
 }
 
-.form-control{
-  width: 206px !important;
-  height: 50px;
-  padding-bottom: 1.8rem;
+.form-style{
+
   border: 1px solid #4b71d0 !important;
   border-top-left-radius: 1px !important;
   border-bottom-left-radius: 1px !important;
   background: #F3F5F9 !important;
   color: rgba(168, 166, 166, 0.8) !important;
   opacity: 0.5 !important;
+}
+.form-element{
+  display: flex;
 }
 .control-label{
   color: #4b71d0;
@@ -581,17 +579,16 @@ background-color: #ffffff;
 .input-group-addon{
   background-color: #4b71d0;
   border-top-left-radius: 10px;
-  padding: 13px;
+  padding: 10px;
 }
-.form-element{
-  display: flex;
-}
-.address{
-  width: 528px !important;
-  height: 55px;
-}
+
+
+
 .arrow-style{
   padding: 15px;
+}
+.form-button{
+  text-align: center;
 }
 .button-style{
   background-color: #4b71d0 !important;
@@ -652,136 +649,299 @@ background-color: #ffffff;
   background-color: #4B71D0;
 }
 
-/* Media Queries */
-/* Extra small devices (phone) */
-
-@media only screen and (min-width: 0px) and (max-width:767px){
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .about-us h2{
-    font-size: 2rem !important;
-    width: 24rem;
-    
-
+    width: 21rem;
+    font-size: 2rem;
   }
-  .about-us .left p{
-    width: 79%;
-  }
-  .about-us .right{
-    border-left:none;
-  }
-  .about-icon{
-    margin-bottom: 26px;
-  }
-  .form h2{
-    font-size: 2rem !important;
-    letter-spacing: 0.1em !important;
-  }
-  .form p{
-    font-size: 16px;
-    width: 320px;
-  }
- 
-}
-@media only screen and (max-width:564px){
-  .about-us h2{
+  .about-us .left{
     margin-left: 30px;
   }
-  .about-us .left p{
-    margin-left: 30px;
+  .aboutus-heading{
+    text-indent: 8em;
   }
-  .about-us button{
-    margin-left: 30px;
-  }
-
-}
-@media only screen and (max-width:360px){
-  .about-us .left p{
-    letter-spacing: 0.04em;
+  .aboutus-heading::before{
+    left: 29px;
+    width: 132px;
   }
   .about-us h2{
-    font-size: 1rem !important;
-    width: 11rem;
+    width: 17rem;
+    font-size: 1.8rem;
   }
   .about-us .left p{
-    margin-left: 30px;
-  }
-  .about-us button{
-    margin-left: 30px;
+    width: 69%;
   }
   .btn-style{
-    width: 206px;
-    height: 69px;
-
+    width: 216px;
+    height: 74px;
+  }
+  .arrow{
+    width: 55px;
+    height: 55px;
   }
   .about-us .arrow{
-    width: 50px;
-    height: 50px;
-    top: 10px;
-    right: 11px;
+    right: 10px;
   }
   .about-us .arrow_svg{
-    width: 61px;
-    top: 17px;
+    width: 80px;
+    right: 15px;
+  }
+  
+  .header-img{
+
+    height: 60px;
+    width: 60px;
+    top: -30px;
+    
    
 }
-.form h2{
-  font-size: 1.2rem !important;
+.address{
+
+  width: 220px;
+  margin-left: -16px;
 }
-.form p{
-  width: 238px;
+.form-button {
+  text-align: start;
 }
+  
+  .testimonails h4::before{
+
+    left: 0rem;
+    width: 130px;
+  }
+  .testimonails .card-title{
+    font-size: 1.2em !important;
+  }
+  .testimonails .card-title::before{
+    top: 1.6rem;
+    left: 7.8rem;
+  }
+  .testimonails .card-title::after{
+    top: 1.6rem;
+    right: 7.8rem;
+  }
+ .testimonails p{
+  font-size: 1em;
+    line-height: 19px;
+ }
+ 
 }
 
-
-
-
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width:1024px){
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .about-us h2{
-    font-size: 2rem !important;
     width: 21rem;
+    font-size: 2rem
 
-  }
-  .about-us .left p{
-    width: 85%;
-  }
-  .about-us h3{
-    margin-left: 28px;
   }
  
-  .about-us .right p{
-    width: 83% !important;
-    margin-left: 28px;
-  }
-  .aboutus-heading ::before{
-    left: 104px;
-  }
-  .form h2{
-    font-size: 2.2rem !important;
-    letter-spacing: 0.1em !important;
-  }
-  .form p{
-    font-size: 16px;
-    width: 356px;
-  }
-  .form-control{
-    width: 174px !important;
-  }
-  .address{
-    width: 440px !important;
-  }
+ 
   
 }
-@media only screen and (min-width: 1100px){
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .aboutus-heading{
+    text-indent: 6em;
+  }
+  .aboutus-heading::before{
+    width: 116px;
+  }
+  .about-us h2 {
+    width: 24rem;
+    font-size:2rem;
+}
+.about-us .left p{
+  letter-spacing: 0.06em;
+    width: 83%;
+}
+.about-us .right h3{
+  margin-left: 30px;
+}
+.about-us .right p{
+  margin-left: 30px;
+}
+
   
 
-   .contact-form {
-    margin-left: 25px;
-     margin-right: 20px;
+  .header-img{
+
+    height: 120px;
+    width: 120px;
+    top: -2rem;
+    left: -3rem;
+   
+  }
+  .testimonails h4::before{
+
+    left: 9rem
+  }
+  .testimonails .card-title::before{
+    top: 5rem;
+    left: 13.5rem;
+  }
+  .testimonails .card-title::after{
+    top: 5rem;
+    right: 13.5rem;
+  }
+ 
+
+
+}
+@media only screen and (max-width: 768px){
+  .about-us .right{
+    border:none;
+  }
+  .about-icon{
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   
+  
+  .our-team img{
+    height: 200px;
+    width: 200px;
+  }
+
+
+  .card-title{
+    font-size: 1rem !important;
+  }
+  .our-team p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    line-height: 25px;
+  }
+ 
+ 
+  .round-circle{
+    position:absolute;
+    height: 200px;
+    width: 200px;
+    
+    bottom: 8px;
+    left: 5.5rem;
+   
+ 
+  }
+
+  .our-team .card-2{
+    position: absolute;
+    width: 194px;
+    height: 237px;
+    top: 2rem;
+    right: 0rem;
+   
+  }
+  
+ 
+
+
+
+}
+@media only screen and (max-width: 991px) and (min-width:768px){
+  .our-team img{
+    height: 300px;
+    width: 300px;
+  }
+  .round-circle {
+    left: 12.5rem;
+    height: 290px;
+    width: 290px;
+}
+.our-team img {
+  height: 290px;
+  width: 290px;
+}
+  .our-team .card-1{
+    left: 2rem;
+  }
+  .our-team .card-2{
+    position: absolute;
+    width: 237px;
+    height: 286px;
+    right: -1rem;
+  }
+  }
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+  .about-us h2 {
+    width: 26rem;
+    font-size:2.5rem;
+}
+.about-us .right h3{
+  margin-left: 0px;
+}
+.about-us .right p{
+  margin-left: 0px;
+}
+
+
+.testimonails h4::before{
+  left: 16rem;
+}
+.testimonails .card-title::before{
+  top: 5rem;
+  left: 16rem;
+}
+.testimonails .card-title::after{
+  top: 5rem;
+  right: 16rem;
+}
+.our-team .card-1{
+  left: 7rem;
+}
+.round-circle{
+  left: 18rem;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+  .about-us h2 {
+    width: 28rem;
+    font-size:2.8rem;
+}
+
+
+.header-img{
+
+  height: 160px;
+    width: 160px;
+    top: -3rem;
+    right: 47rem;
+}
+.testimonails h4::before{
+  left: 22rem;
+
+}
+.testimonails .card-title::before{
+  top: 4.8rem;
+  left: 20rem;
+}
+.testimonails .card-title::after{
+  top: 4.8rem;
+  right: 20rem;
+}
+.our-team .card-1{
+  left: 10rem;
+}
+.round-circle{
+  left: 24rem;
+}
+
 }
 
 
