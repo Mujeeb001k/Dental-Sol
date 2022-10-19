@@ -804,6 +804,7 @@ background-color: #ffffff;
   .our-team img{
     height: 200px;
     width: 200px;
+    margin-top: -12px;
   }
 
 
@@ -811,28 +812,31 @@ background-color: #ffffff;
     font-size: 1rem !important;
   }
   .our-team p{
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 600;
     margin-bottom: 0px;
-    line-height: 25px;
+    line-height: 18px;
   }
  
- 
+  .our-team .card-1{
+    bottom: 170px;
+    height: 100px;
+  }
   .round-circle{
     position:absolute;
     height: 200px;
     width: 200px;
     
     bottom: 8px;
-    left: 5.5rem;
+    left: 6.9rem;
    
  
   }
 
   .our-team .card-2{
     position: absolute;
-    width: 194px;
-    height: 237px;
+    width: 165px;
+    height: 200px;
     top: 2rem;
     right: 0rem;
    
